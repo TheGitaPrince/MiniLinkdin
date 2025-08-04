@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import EditProfile from "../components/EditProfile.jsx";
 import EditPost from "../components/EditPost.jsx";
 
-export default function ProfilePage() {
+export default function Profile() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
