@@ -1,6 +1,6 @@
 # MiniLinkedin - Mini LinkedIn-like Community Platform
 
-> **Live Demo:** [Vercel Deployment Link](https://google-login-v853.vercel.app/) 
+> **Live Demo:** [Vercel Deployment Link](https://mini-linkdin-rnf9.vercel.app/) 
 ---
 
 ## 🖼️ App Screenshots
