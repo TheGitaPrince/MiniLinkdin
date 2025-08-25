@@ -5,7 +5,7 @@ export default function CommunityUser({ closeOpenProfile, post }) {
     <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center backdrop-blur-sm">
       <div className="relative bg-white rounded-xl shadow-2xl w-full max-w-md mx-auto p-0 overflow-hidden">
         <div className="flex flex-col items-center  bg-blue-100 px-5 py-4">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 w-full">
             <div className="flex flex-row items-center justify-between w-full">
               <div className="flex flex-row items-center gap-3">
                 <div className="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold uppercase shadow">

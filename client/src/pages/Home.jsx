@@ -4,6 +4,7 @@ import { getAllPosts } from "../store/postSlice.js";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import CommunityUser from "../components/CommunityUser.jsx";
+import Loading from "../components/Loading.jsx";
 
 export default function HomeFeed() {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ export default function HomeFeed() {
 
   return (
     <div className="min-h-screen bg-blue-50 pt-4 pb-10 px-2">
-      <header className="bg-white shadow rounded-md max-w-xl mx-auto flex items-center justify-between px-3 md:px-6 py-3 mb-8">
+      <header className="bg-white shadow rounded-md max-w-xl mx-auto flex items-center justify-between px-3 md:px-6 py-3 md:mb-5 mb-3">
         <div className="flex items-center gap-3 w-full">
           <div className="bg-blue-600 text-white flex items-center justify-center rounded-full w-10 h-10 font-bold text-lg uppercase">
             {user?.name?.[0] || "U"}
@@ -48,13 +49,12 @@ export default function HomeFeed() {
         </div>
       </header>
       <main className="max-w-xl mx-auto">
-        <h1 className="text-2xl font-bold mb-5 text-blue-700 text-center">
-          Community Feed
-        </h1>
         {loading && (
-          <p className="text-center text-gray-400 mb-8">Loading posts...</p>
+          <div className="flex justify-center items-center "> 
+             <Loading className="mb-8" />
+          </div>
         )}
-        <ul className="space-y-5">
+        <ul className="space-y-2">
           {posts &&
             posts.length > 0 &&
             posts.map((post) => (
